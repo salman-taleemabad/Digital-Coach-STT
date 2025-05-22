@@ -9,6 +9,9 @@ from pydub import AudioSegment
 from openai import OpenAI
 from dotenv import load_dotenv
 import logging
+import time
+import random
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -78,7 +81,7 @@ class UrduTranscriptionPipeline:
         return f"{minutes:02d}:{seconds:02d}:{milliseconds:02d}"
     
     def process_chunks(self, chunks, chunk_metadata):
-        """Process each chunk for both transcription and translation"""
+        """Process each chunk for both transcription and translation - PROVEN APPROACH"""
         results = []
         
         for i, (chunk, metadata) in enumerate(zip(chunks, chunk_metadata)):
@@ -94,12 +97,12 @@ class UrduTranscriptionPipeline:
                 chunk.export(temp_path, format="mp3")
                 
                 with open(temp_path, 'rb') as audio_file:
-                    # Get Urdu transcription
+                    # Get Urdu transcription - SIMPLE BASELINE APPROACH
                     audio_file.seek(0)
                     transcription = self.client.audio.transcriptions.create(
                         model="whisper-1",
                         file=audio_file,
-                        language="ur"
+                        language="ur"  # That's it! No prompts, no extra parameters
                     )
                     
                     # Get English translation
@@ -109,18 +112,27 @@ class UrduTranscriptionPipeline:
                         file=audio_file
                     )
                 
+                # Process results
+                urdu_text = transcription if isinstance(transcription, str) else transcription.text
+                english_text = translation if isinstance(translation, str) else translation.text
+                
+                # Check for Urdu script (for logging)
+                import re
+                has_urdu_chars = bool(re.search(r'[\u0600-\u06FF\u0750-\u077F]', urdu_text))
+                
                 result = {
                     'chunk_id': i+1,
                     'start_time': metadata['start_time'],
                     'end_time': metadata['end_time'],
-                    'urdu_text': transcription.text,
-                    'english_translation': translation.text,
-                    'urdu_word_count': len(transcription.text.split()),
-                    'english_word_count': len(translation.text.split())
+                    'urdu_text': urdu_text,
+                    'english_translation': english_text,
+                    'urdu_word_count': len(urdu_text.split()),
+                    'english_word_count': len(english_text.split()),
+                    'has_urdu_script': has_urdu_chars
                 }
                 results.append(result)
                 
-                logger.info(f"Chunk {i+1} completed successfully")
+                logger.info(f"Chunk {i+1} completed successfully - Urdu script: {has_urdu_chars}")
                 
             except Exception as e:
                 logger.error(f"Error processing chunk {i+1}: {e}")
@@ -130,7 +142,8 @@ class UrduTranscriptionPipeline:
                     'end_time': metadata['end_time'],
                     'urdu_text': "[Error in Urdu transcription]",
                     'english_translation': "[Error in English translation]",
-                    'error': str(e)
+                    'error': str(e),
+                    'has_urdu_script': False
                 }
                 results.append(result)
             finally:
@@ -139,7 +152,54 @@ class UrduTranscriptionPipeline:
                     os.remove(temp_path)
         
         return results
-    
+
+    def process_chunk_with_retries(self, temp_path, urdu_prompt, max_retries=3):
+        """Process a single chunk with manual retry logic"""
+        import re
+        
+        for attempt in range(max_retries):
+            try:
+                with open(temp_path, 'rb') as audio_file:
+                    # Get Urdu transcription
+                    audio_file.seek(0)
+                    logger.info(f"Attempt {attempt + 1}: Getting Urdu transcription...")
+                    transcription = self.client.audio.transcriptions.create(
+                        model="whisper-1",
+                        file=audio_file,
+                        language="ur",
+                        prompt=urdu_prompt,
+                        response_format="text",
+                        temperature=0.0
+                    )
+                    
+                    # Get English translation
+                    audio_file.seek(0)
+                    logger.info(f"Attempt {attempt + 1}: Getting English translation...")
+                    translation = self.client.audio.translations.create(
+                        model="whisper-1",
+                        file=audio_file,
+                        response_format="text",
+                        temperature=0.0
+                    )
+                
+                # Process results
+                urdu_text = transcription if isinstance(transcription, str) else transcription.text
+                english_text = translation if isinstance(translation, str) else translation.text
+                
+                # Check for Urdu script
+                has_urdu_chars = bool(re.search(r'[\u0600-\u06FF\u0750-\u077F]', urdu_text))
+                
+                return urdu_text, english_text, has_urdu_chars
+                
+            except Exception as e:
+                logger.warning(f"Attempt {attempt + 1} failed: {e}")
+                if attempt < max_retries - 1:
+                    wait_time = (2 ** attempt) + random.uniform(1, 3)  # Exponential backoff
+                    logger.info(f"Waiting {wait_time:.1f}s before retry...")
+                    time.sleep(wait_time)
+                else:
+                    raise e  # Re-raise on final attempt
+        
     def save_processed_data(self, audio_path, results, duration_ms):
         """Save all processed data in organized structure"""
         file_stem = Path(audio_path).stem

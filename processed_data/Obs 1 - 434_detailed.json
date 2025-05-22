@@ -1,0 +1,606 @@
+{
+  "metadata": {
+    "original_file": "Dataset/Dataset/Barakahu/434-IMSB Sihali/Obs 1 - 434.m4a",
+    "processed_file": "processed_data/audio/Obs 1 - 434.mp3",
+    "processing_date": "2025-05-22T16:26:29.838543",
+    "duration_seconds": 1455.705,
+    "total_chunks": 59
+  },
+  "chunks": [
+    {
+      "chunk_id": 1,
+      "start_time": "00:00:00",
+      "end_time": "00:30:00",
+      "urdu_text": "پیچ نمبر سیونٹی پائیڈ ملے یہ والا کھول لیا ہے اس پہ آپ لوگوں کو یہ دو تصویریں نظر آ رہی ہوں گے پہلی تصویر میں کیا ہو رہا ہے بچے پڑھ رہے ہیں اور کچھ بچوں نے ہینڈ بھی ریز کیا ہوا تین بچوں نے ہینڈ بھی ریز کیا ہوا",
+      "english_translation": "This is page number 75, this one. It's open. It's open? Yes, sir. I think you can see these two pictures here. Yes, sir. What's happening in the first picture? The kids are studying. The kids are studying? Yes, sir. And some kids have raised their hands like this. Three kids. Three kids raised their hands? Yes, sir. Yes, sir. ",
+      "urdu_word_count": 51,
+      "english_word_count": 60,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 2,
+      "start_time": "00:25:00",
+      "end_time": "00:55:00",
+      "urdu_text": "تین بچوں میں تین بچوں میں کیا ہوگا اور دوسری تصویر میں کیا ہوگا جنگلہ لڑائی کر رہے ہیں اچھا پھر آپ لوگ کون سی تصویرشی لگ رہی ہے پہلے والی اس میں جس میں بچے پڑھ رہے ہیں دوسری تصویرشی کیوں نہیں لگ رہی نہیں لڑائی جنگلہ اچھی بات نہیں ہے اچھی بات نہیں",
+      "english_translation": "Three children. Three children are not studying. And what happens in the second picture? Children are fighting. Are they fighting? Yes, sir. Which picture do you think is better? The first one or the second one? The first one. In which picture are the children studying? This one, sir. Why doesn't the second picture look better? No, sir. Fighting is not a good thing. No, sir.",
+      "urdu_word_count": 55,
+      "english_word_count": 66,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 3,
+      "start_time": "00:50:00",
+      "end_time": "01:20:00",
+      "urdu_text": "کراہی جھگڑا اچھی بات نہیں ہے اچھی بات؟ ایک کلاس کے اندر کؤنڈن اچھی بات ہے اور جو تیچر سے سوال کریں تو کیا کراہیں learn to teach ہاتھ کڑا کرو ہاتھ کڑا کرو ہاتھ کڑا کرو جب کلاس میں تیچر ہوتا تو کیا کراہیں کلاس میں اندر تیچر آئے تو کیا کراہیں ہاتھ کڑا کرو",
+      "english_translation": "Fighting is not a good thing. Is it a good thing? No. It is a good thing to study in a class. Isn't it a good thing? Yes. And what should we do when we ask a teacher? Raise our hands. No, raise your hands. Raise your hands. Raise your hands. What should we do when there is a teacher in the class? What should we do when there is a teacher in the class? What should we do when there is a teacher in the class?",
+      "urdu_word_count": 56,
+      "english_word_count": 87,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 4,
+      "start_time": "01:15:00",
+      "end_time": "01:45:00",
+      "urdu_text": "کلاس میں آدھے غاہر آتے ہیں تو کیا کرنا آتے ہیں؟ یہ بیٹا جتنی بھی باتیں کے، کلاس میں غاہر آئے آپ نے سلام کرنا ہے، یہ اچھی عادت ہے کیا ہے؟ اچھی عادت ہے سوال موچنا اور غاہر سے کوئی ہوئی، تو اس طرح بچوں نے ہاتھ ریز کیا ، آپ لوگوں نے بیسے ہاتھ ریز کرنا ہے صحیح ہے؟ ایسے ہی نہیں بولنا ہاتھ ریز کرنا ہے جب ٹیچر بولے ہاں جی بیٹا بولے تو پھر آپ لوگوں نے بعد میں بولنا ہے، یہ اچھی عادت ہے",
+      "english_translation": "What do you have to do when a teacher comes in the class? We have to salute him. So whatever it is, when a teacher comes in the class, you have to salute him. It's a good habit. What is it? It's a good habit. It's a good habit. Ask questions to the teacher. Raise your hands like the children raised their hands. Yes, sir. Right? Yes, sir. Don't say it like that. Raise your hands. When the teacher says, yes, son, say it, then you have to say it later. Yes, sir. Yes, sir. ",
+      "urdu_word_count": 89,
+      "english_word_count": 95,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 5,
+      "start_time": "01:40:00",
+      "end_time": "02:10:00",
+      "urdu_text": "ہاں جی بیٹا بولیں تو پھر آپ لوگ انہیں بعد میں بولنا ہے یہ اچھی عادتیں good manners ہیں اور یہ classroom, classroom manners ہیں کیا ہے یہ classroom manners classroom classroom manners ہیں classroom یہ class کے آداب ہیں class کے آداب class کے آداب آج ہم لوگ ایک story پڑھیں گے زارا کی اور اس کے teacher کی کیا کی اور teacher",
+      "english_translation": "If the teacher says yes, then you have to say it later. These are good habits, good manners. And this is classroom manners. What is this? Classroom manners. Classroom manners. Classroom manners. Classroom manners. This is class etiquette. Class etiquette. Class etiquette. Today we will read a story of Zara and her teacher. We shall play the instrument.",
+      "urdu_word_count": 64,
+      "english_word_count": 58,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 6,
+      "start_time": "02:05:00",
+      "end_time": "02:35:00",
+      "urdu_text": "",
+      "english_translation": "Zara and her teacher. Zara and her teacher. In which they will tell us the etiquette of the class. We also have to follow them. We are following most of them. We are following all of them. But let's see what things they will read. And then we also have to follow them. Classroom manners. What is written here? What is written here?",
+      "urdu_word_count": 0,
+      "english_word_count": 63,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 7,
+      "start_time": "02:30:00",
+      "end_time": "03:00:00",
+      "urdu_text": "کیا لکھا ہے؟ مریض مریض مریض کیا پانگیا ہے؟ مریض مریض مریض مریض مریض مریض مریض",
+      "english_translation": "What letter is this? What letter is this? And this? What letter is this? And this? And this?",
+      "urdu_word_count": 16,
+      "english_word_count": 18,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 8,
+      "start_time": "02:55:00",
+      "end_time": "03:25:00",
+      "urdu_text": "",
+      "english_translation": "",
+      "urdu_word_count": 0,
+      "english_word_count": 0,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 9,
+      "start_time": "03:20:00",
+      "end_time": "03:50:00",
+      "urdu_text": "پچھلے گلسروم مائی یہ کیا ہے پچھلے گلسروم میں نرس میں نرس میں نرس کمبرے جماعت کے عضاو کمرے جماعت کے عضاو یہ ہمارا کلاس روم ہے کیا ہے کلاس روم اس میں بیٹھنے کے پڑھنے کے عضاو ہوتے ہیں کلاس روم اس میں بیٹھنے کے عضاو ہوتے ہیں",
+      "english_translation": "Classroom is a classroom. One minute, not separately. What is this? Classroom. And this? Manners. This is the etiquette of the classroom. The etiquette of the classroom. This is our classroom. What is this? Classroom. The etiquette of the classroom.",
+      "urdu_word_count": 49,
+      "english_word_count": 40,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 10,
+      "start_time": "03:45:00",
+      "end_time": "04:15:00",
+      "urdu_text": "اس میں بیٹھنے کے پڑھنے کے آداب ہوتے ہیں ایک ساتھ بولیں تاکہ سمجھ آئے",
+      "english_translation": "Listen carefully. This is the etiquette of sitting and reading. Say it together so that we can understand.",
+      "urdu_word_count": 15,
+      "english_word_count": 18,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 11,
+      "start_time": "04:10:00",
+      "end_time": "04:40:00",
+      "urdu_text": "",
+      "english_translation": "M-O-N-D-A-Y It was... It was... Monday M-O-N-D-A-Y Monday Monday It was... Monday It was Monday It was Monday M-O-N-D...",
+      "urdu_word_count": 0,
+      "english_word_count": 19,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 12,
+      "start_time": "04:35:00",
+      "end_time": "05:05:00",
+      "urdu_text": "M-O-R-N-I-N-G Morning It was Monday morning پیر کی صبح تھی زیر کی آواز",
+      "english_translation": "M-O-R-N-I-N-G Morning Morning It was It was Monday Monday Morning Morning Peer ki suba thi Peer ki suba thi Suba thi Z Zer",
+      "urdu_word_count": 13,
+      "english_word_count": 23,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 13,
+      "start_time": "05:00:00",
+      "end_time": "05:30:00",
+      "urdu_text": "زیر زیر کی آواز کیا ہوگی ہے ز زیر ز ز ز ز ز زیر کی آواز کیا ہے زیر کی آواز کیا ہے زیر کی آواز کیا ہے زیر کی آواز کیا ہے زیر کی آواز کیا ہے زیر کی آواز کیا ہے زیر کی آواز کیا ہے زیر کی آواز کیا ہے زیر کی آواز کیا ہے زیر کی آواز چیں کی عربیت زیر کی آواز چینے ہٹا؟ زیر کی آواز چینے ہٹا? زیر کی آواز چینے ہٹا؟ زیر کی آواز چینے ہٹا؟ زیر کی آواز چینے ہٹا؟",
+      "english_translation": "Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z",
+      "urdu_word_count": 90,
+      "english_word_count": 20,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 14,
+      "start_time": "05:25:00",
+      "end_time": "05:55:00",
+      "urdu_text": "",
+      "english_translation": "E N D N Zara N Zara N Zara N Zara N D R R",
+      "urdu_word_count": 0,
+      "english_word_count": 15,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 15,
+      "start_time": "05:50:00",
+      "end_time": "06:20:00",
+      "urdu_text": "ایس ای آر ایس ای وی ایس ایس آر ایس",
+      "english_translation": "S E R R S E W W U U S C S C S",
+      "urdu_word_count": 10,
+      "english_word_count": 15,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 16,
+      "start_time": "06:15:00",
+      "end_time": "06:45:00",
+      "urdu_text": "",
+      "english_translation": "S-C-A-R-S W-H-E-R-S School School School W-H-E-R-S W-H-E-R-S W-H-E...",
+      "urdu_word_count": 0,
+      "english_word_count": 8,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 17,
+      "start_time": "06:40:00",
+      "end_time": "07:10:00",
+      "urdu_text": "ای ای آ آ ڈی ای W-H-E-R-E ہاں مہر مہر مہر اے اے جی جی جی M-E-T مہر مہر مہر مہر مہر",
+      "english_translation": "W-H-E-R-E W-H-E-R-E Where? Where? Where? M-E-T M-E-T M-E-T M-E-T Man Man Man Man",
+      "urdu_word_count": 22,
+      "english_word_count": 13,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 18,
+      "start_time": "07:05:00",
+      "end_time": "07:35:00",
+      "urdu_text": "",
+      "english_translation": "Me. S... E... R... N... Good Shabadwar. C... G... J... S... C L A double S Clause. Clause. What's that? Sala.",
+      "urdu_word_count": 0,
+      "english_word_count": 21,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 19,
+      "start_time": "07:30:00",
+      "end_time": "08:00:00",
+      "urdu_text": "گلا غلا سا ڈی ڈی اے سی اے سی آر سی جا سی جا سی جا سارا سارا وے وے جول جول ہر ہر نوں نوں سکول سکول سکول ڈی اے ڈی اے سی جا",
+      "english_translation": "Class. Teacher. Sara. Teacher. Teacher. Teacher. Sara. Sara. Friend. To. Her. New. School. School. Class.",
+      "urdu_word_count": 35,
+      "english_word_count": 15,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 20,
+      "start_time": "07:55:00",
+      "end_time": "08:25:00",
+      "urdu_text": "ہم کلاکسیچر ہیں زارہ اپنے نئے سکول میں گئی جہاں وہ اپنے ٹیچر کے ساتھ ملی زارہ اپنے سکول میں گئی اچھا ٹیچر کے ساتھ ملی ہوگی تو کیا بولا ہونا پہلے اسلام علیہ السلام یہ گوڈ مینر ہے بیٹا یہ کیا ہے",
+      "english_translation": "We are here to meet our class teacher. Zara went to her new school where she met her new teacher. Zara met her new teacher. If she met her new teacher, what would she have said? Assalamualaikum. This is a good manner.",
+      "urdu_word_count": 43,
+      "english_word_count": 42,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 21,
+      "start_time": "08:20:00",
+      "end_time": "08:50:00",
+      "urdu_text": "سلام علیکم یہ جوڑ مینر ہے بٹا کیا یہ؟ جوڑ مینر ہے یہ اچھی آداب ہیں سب سے پہلے کیا کرنا ہوتا ہے؟ سلام علیکم سلام علیکم سلام علیکم سلام علیکم پھر اپنا تعرف کروائے اسے یہ کیا لکھا ہے؟ آئی",
+      "english_translation": "Assalamualaikum This is good manner What is this? This is good manner These are good manners What is the first thing to do? Assalamualaikum Assalamualaikum Assalamualaikum Assalamualaikum Then introduce yourself What is written here? Good",
+      "urdu_word_count": 41,
+      "english_word_count": 35,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 22,
+      "start_time": "08:45:00",
+      "end_time": "09:15:00",
+      "urdu_text": "پھر اپنا تعرف کروائے اسے یہ کیا رکھا ہے آئی اے آئی ایم آئی ایم آئی ایم زہرہ زہرہ زہرہ آئی ایم زہرہ آئی ایم زہرہ آئی ایم زہرہ زہرہ جی او ڈی اے واری",
+      "english_translation": "Introduce yourself. What is written here? I A M I am Zara Zara Zara Zara Zara I am Zara Zara Zara G O D A Y",
+      "urdu_word_count": 35,
+      "english_word_count": 26,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 23,
+      "start_time": "09:10:00",
+      "end_time": "09:40:00",
+      "urdu_text": "جہرا جہرا جی او ڈی اے وار منڈے یا دی ای وار جی او ڈی اے وار ڈو ڈے ہر لبز منڈے نہیں ہوتا بیٹا ڈو ڈے ڈو ڈے ڈو ڈے سا ایز ایز ایز",
+      "english_translation": "Zahra Zahra G O D A Y Monday Monday O D E Y G O D A Y Today Today Today Today Today Is Is",
+      "urdu_word_count": 35,
+      "english_word_count": 25,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 24,
+      "start_time": "09:35:00",
+      "end_time": "10:05:00",
+      "urdu_text": "",
+      "english_translation": "",
+      "urdu_word_count": 0,
+      "english_word_count": 0,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 25,
+      "start_time": "10:00:00",
+      "end_time": "10:30:00",
+      "urdu_text": "qaf 5 taiful qaf 5 taiful I N T H I S S S T H O O L School S T H O O L H A J M E R A S T H I S C H O O L M A I N P A I D A D O",
+      "english_translation": "I am in T-H-I-S-S-T-H-O-O-L school. I was born in this school.",
+      "urdu_word_count": 54,
+      "english_word_count": 11,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 26,
+      "start_time": "10:25:00",
+      "end_time": "10:55:00",
+      "urdu_text": "آج میرا سکوئی میں پہلا دن ہے ایک کون پڑھ کے سنا گا مجھے ایک دن، دن، دن، دن، دن، دن، دن، دن",
+      "english_translation": "Today is my first day at school. Who will read this for me? 1, 2, 3, 4, Monday, Monday, Morning, Morning",
+      "urdu_word_count": 23,
+      "english_word_count": 21,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 27,
+      "start_time": "10:50:00",
+      "end_time": "11:20:00",
+      "urdu_text": "",
+      "english_translation": "One Monday morning Dara went to her new school where she met her class teacher. Assalamu Alaikum",
+      "urdu_word_count": 0,
+      "english_word_count": 17,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 28,
+      "start_time": "11:15:00",
+      "end_time": "11:45:00",
+      "urdu_text": "مہ اسلام علیکم اسلام علیکم میں میں گارہ گارہ آج آج آج میری میری پاس پاس پاس آج آج سکول سکول سکول بات موجود",
+      "english_translation": "As-salamu alaykum, I am Zahra, today is my first day in school.",
+      "urdu_word_count": 24,
+      "english_word_count": 12,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 29,
+      "start_time": "11:40:00",
+      "end_time": "12:10:00",
+      "urdu_text": "",
+      "english_translation": "",
+      "urdu_word_count": 0,
+      "english_word_count": 0,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 30,
+      "start_time": "12:05:00",
+      "end_time": "12:35:00",
+      "urdu_text": "اسکول اسکول ورک ورک اس پہلے پڑو اس پہلے پڑو و-ہ-ب-ر-ا ورک ورک ورک ورک شاہد شیشن شیشن شیشن شیشن شیشن شیشن اس پہلے پڑو شیشن شیشن شاہد اسلام علیکم شیشن شیشن",
+      "english_translation": "",
+      "urdu_word_count": 32,
+      "english_word_count": 0,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 31,
+      "start_time": "12:30:00",
+      "end_time": "13:00:00",
+      "urdu_text": "السلام علیکم میں ہوں اور آج یہ میرے پہلے دن یہ مکان ہے مکان ہے مکان ہے",
+      "english_translation": "As-salamu alaykum. I am Sara. Today is my first birthday in this school. I am nervous.",
+      "urdu_word_count": 17,
+      "english_word_count": 16,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 32,
+      "start_time": "12:55:00",
+      "end_time": "13:25:00",
+      "urdu_text": "",
+      "english_translation": "",
+      "urdu_word_count": 0,
+      "english_word_count": 0,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 33,
+      "start_time": "13:20:00",
+      "end_time": "13:50:00",
+      "urdu_text": "کھل کھل میو كول وی پی سی وی پی خوائی ویر ویر سی سی سی سی میرے گھر",
+      "english_translation": "What will it be? School School sh h e school s h e s h s s h s s h again s s s h s s s h s s h s h s h s h s h s h s h s s s h s h s h s h s h s h s h s h s h s h s s h s h s h h h h h h h h h h h h h h h",
+      "urdu_word_count": 18,
+      "english_word_count": 88,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 34,
+      "start_time": "13:45:00",
+      "end_time": "14:15:00",
+      "urdu_text": "میٹ ڈالنے کی نمذگ مقیалی مقیالم خوشت راقدار مقیالم خوشتی تھا مقیالم خوشتی یہ alone اسلام علیکم مقیالم اصلاح مائے مائے مائے",
+      "english_translation": "And 18 minutes, I have to go to class. C-L-A-S-S Class? Class, good. Teacher? Teacher? Assalamualaikum Assalamualaikum Assalamualaikum, I am Zara. Where is my mask?",
+      "urdu_word_count": 22,
+      "english_word_count": 25,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 35,
+      "start_time": "14:10:00",
+      "end_time": "14:40:00",
+      "urdu_text": "ڈیڈ ڈیڈ مائے مائے پاس پاس ڈیڈ ڈیڈ ڈیڈ ڈیڈ ڈیڈ ڈیڈ دیز ایس دیز ایس دیز دیز سکول سکول سکول ڈیڈ ڈیڈ مائے مائے",
+      "english_translation": "",
+      "urdu_word_count": 25,
+      "english_word_count": 0,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 36,
+      "start_time": "14:35:00",
+      "end_time": "15:05:00",
+      "urdu_text": "اچھا اچھا اچھ اچھ وار وار مندے مندے موزنی موزنی زارا زارا زارا زارا زارا زارا و اے اے وی پیٹا ہاں ٹیک ہے وین ڈو ٹو ہارڈ یو ہارڈ یو",
+      "english_translation": "Okay, okay. It is my first Monday morning. Zara, Zara, Zara, Zara, Zara, Zara, Zara, Zara. W-A-R-E. When you do that, how do you do that?",
+      "urdu_word_count": 31,
+      "english_word_count": 26,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 37,
+      "start_time": "15:00:00",
+      "end_time": "15:30:00",
+      "urdu_text": "اپنے وڈ بچانوں کو تین راہ ک 화장 راہ مل کر برہا آئج 问 zwei وہا nostro wa too wy tch cia السلام عليکم میں میں i میں زہرا زہرا زہرا آپ کا نام زہرا نہیں بھیٹازارا الیسڈ ایل ایل ایل",
+      "english_translation": "I love you. School. Where. She. Make. Make. Hi. Hi. Teacher. Teacher. Asalamualaikum. I am. Zahra. Zahra. Zahra. Zahra. Today. Today. Here.",
+      "urdu_word_count": 41,
+      "english_word_count": 22,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 38,
+      "start_time": "15:25:00",
+      "end_time": "15:55:00",
+      "urdu_text": "Today is my first day in this school. یہ good manners نہیں ہے بٹا ہمارے لئے بہترین بہترین بہترین بہترین بہترین",
+      "english_translation": "Today is my first day in this school. This is not good manners.",
+      "urdu_word_count": 21,
+      "english_word_count": 13,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 39,
+      "start_time": "15:50:00",
+      "end_time": "16:20:00",
+      "urdu_text": "رہ حق کا جہنم یہ خوبصورت وگری نہیں ہے بٹا بن پونھار کے بھاڑوں کے خوبصورت اور بال ہوتے ہیں یہ چونکھل سے بہت پسند ہے مہدچ انبوا Corn نچ چھان گے مہدچ ڈو ڈو ڈل ڈال ڈیوڈ ڈیوڈ گوڑ گوڑ",
+      "english_translation": "This is not good manners, child. You are studying our good manners. Teacher will do it. Come, come.",
+      "urdu_word_count": 41,
+      "english_word_count": 18,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 40,
+      "start_time": "16:15:00",
+      "end_time": "16:45:00",
+      "urdu_text": "جہاں جہاں اُنہیں جہاں جہاں جہاں جہاں من من گلاس گلاس السلام علیکم السلام علیکم میں میں میں",
+      "english_translation": "And her new school, W-H-E-R-E, where she met her class teacher. As-salamu alaykum, I am Zahra Barhamdeh.",
+      "urdu_word_count": 18,
+      "english_word_count": 17,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 41,
+      "start_time": "16:40:00",
+      "end_time": "17:10:00",
+      "urdu_text": "آگے بھی یے چارٹ اک کلاسروم مین hass थا जगवरा बीस eches लेने है एक",
+      "english_translation": "I am and Zara, Bara, they, where is, in, my, my, but, but, they, they, in, in, they, they, school, school. Thank you.",
+      "urdu_word_count": 15,
+      "english_word_count": 23,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 42,
+      "start_time": "17:05:00",
+      "end_time": "17:35:00",
+      "urdu_text": "یہ کلاس روم مینرز ہیں نظر آرہے ہیں اب ہی عمل پڑھتے ہیں ان میں سے کتنے مینرز ہیں یہ عمل پڑھتے ہیں",
+      "english_translation": "This is a classroom with four manners. Can you see? Yes! Now let's see how many of these manners are followed.",
+      "urdu_word_count": 23,
+      "english_word_count": 21,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 43,
+      "start_time": "17:30:00",
+      "end_time": "18:00:00",
+      "urdu_text": "اپنے کلاس روم کو صاف رکھیں اپنے کلاس روم کو صاف رکھیں",
+      "english_translation": "",
+      "urdu_word_count": 12,
+      "english_word_count": 0,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 44,
+      "start_time": "17:55:00",
+      "end_time": "18:25:00",
+      "urdu_text": "اپنے کلاس روم کو صاف رکھیں یہ مینر ہے آپ لوگوں میں یہ صرف بلکل صرف یہ واقع ہے یہ اپنے کلاس کو صاف رکھتے ہیں اچھے بچے دوسرا ریسپیکٹ ریسپیکٹ یور یور ٹیچر ٹیچر اپنے ٹیچر کی اپنے ٹیچر کی عزت کریں ٹیچر",
+      "english_translation": "Keep your classroom clean. Do you have this manner in you? Yes, sir. Yes, sir. They really keep their classroom clean. Good children. Respect your teacher. Respect your teacher.",
+      "urdu_word_count": 44,
+      "english_word_count": 29,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 45,
+      "start_time": "18:20:00",
+      "end_time": "18:50:00",
+      "urdu_text": "اپنے تیچر کی عزت کریں یہ بھی ہے اچھا جو ہو نہ اس کے لیے اس طرح کرنا ہے آپ لوگ نے جو آپ لوگوں میں ہے اس کے لیے اس طرح کرنا ہے اور جو نہ ہو آپ لوگ نے سچ بولنا ہے ایسے کرنا ہے یہ ہم میں نہیں ریسپیک کیونکہ یہ ہے Thumb up ایسے کرنا ہے سوچیں آپ",
+      "english_translation": "Respect your teacher. Is this also there? Yes sir. You have to do like this for what you have. You have to do like this for what you have. And you have to do like this for what you don't have. We don't have this. Is it correct? Yes. Respect your teacher. Is this there? Yes sir. Thumb up. Thumb up. You have to do like this. Listen to your teacher.",
+      "urdu_word_count": 62,
+      "english_word_count": 71,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 46,
+      "start_time": "18:45:00",
+      "end_time": "19:15:00",
+      "urdu_text": "Listen to your teacher carefully. अपने टीचर को गोहर से सुनें। सुनते हैं जो टीचर बोलता है। सुनते हैं जो टीचर बोलता है।",
+      "english_translation": "Listen to your teacher carefully. Share your things with your friends.",
+      "urdu_word_count": 23,
+      "english_word_count": 11,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 47,
+      "start_time": "19:10:00",
+      "end_time": "19:40:00",
+      "urdu_text": "اپنی چیزیں اپنے ہم جماعت کے ساتھ شیئر کریں اگر آپ کے پاس کھانے پینے کی چیز دوسرے کے پاس نہیں ہے تو اس کے ساتھ شیئر کرنی ہے",
+      "english_translation": "Share your things with your classmates. Share your things with your classmates. Do you do it? Yes sir. No sir. No sir. You have to do it after today. Yes sir. Share your things with your classmates.",
+      "urdu_word_count": 29,
+      "english_word_count": 37,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 48,
+      "start_time": "19:35:00",
+      "end_time": "20:05:00",
+      "urdu_text": "اگر کچھ اکسٹا چیزیں ہو یا کھانے پینے کی چیزیں ہو دوسرے کے پاس نہیں ہیں تو اُس کے ساتھ شیئر کر دیا کریں پھر دوسرے دن اُس کے پاس زیادہ ہوگی تو اُس کے ساتھ شیئر کر دے گا Yes Sir سریع ہے نا Yes Sir اگر کچھ بھی نہیں ہے تو آج کے بعد اِس پر عمل کرنا ہے Yes Sir چکے سچے بچے دو بچے مند کے سچے سچ بولنے گا ہے نہیں سیڈ سیڈ پرمیشن پرمیشن ریپورٹ ریپورٹ کوئن کوئن دہ دہ",
+      "english_translation": "If you don't have anything to eat or drink, you can share it with others, if you have more, you can share it with others. If you don't have it now, you can use it later. Seek permission before going to the toilet.",
+      "urdu_word_count": 86,
+      "english_word_count": 43,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 49,
+      "start_time": "20:00:00",
+      "end_time": "20:30:00",
+      "urdu_text": "Before going to the washroom Are to drink water پہلے اجازت طلب کریں",
+      "english_translation": "Before going to the washroom, you have to drink water. Before going to the washroom, or before drinking water, seek permission first.",
+      "urdu_word_count": 13,
+      "english_word_count": 22,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 50,
+      "start_time": "20:25:00",
+      "end_time": "20:55:00",
+      "urdu_text": "باپ مانی ملیں کے لئے پہلے اجازت طلب کریں پہلے اجازت طلب کریں ہے؟ ہاں سارا چل یہ ہے یہ آپ لوگ اجازت لیتے ہیں جب آشروب جاتے ہیں یا پہلے پہنچ جاتے ہیں تو کہ کیسے اجازت لیتے ہیں یہ ایسی بات ہے یہ ہے آپ لوگوں میں بھی بولائیں and use please and thank you thank you شاہستہ الفاظ بولیں جب کسی سے کچھ چیز لینی ہو",
+      "english_translation": "Please ask for permission before you go to the washroom or the toilet. Be polite and use please and thank you. Be polite and use please and thank you.",
+      "urdu_word_count": 69,
+      "english_word_count": 29,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 51,
+      "start_time": "20:50:00",
+      "end_time": "21:20:00",
+      "urdu_text": "شاہستہ الفاظ بولیں جب کسی سے کوئی چیز لینی ہو کسی سے کوئی چیز لینی ہو تو please کر کے لیں please give me a book thank you welcome جب کسی سے چیز لینے تو please کر کے آپ لوگ چیز لینے اور وہ بندہ آپ جس کو دے وہ اس کو thank you بولنا چاہیے اور اس کے اگر آپ میں کیا بولیں گے یہ عادت ہے یہ مینر ہے یہ مینر ہے",
+      "english_translation": "Thank you Say it in a polite way If you want to take anything from anyone If you want to take anything from anyone Please do it Please give me a book Thank you When you take anything from anyone Please do it And the person who gives it to you Should say thank you And what will you say against that? This is our habit This is our habit This is our habit",
+      "urdu_word_count": 74,
+      "english_word_count": 74,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 52,
+      "start_time": "21:15:00",
+      "end_time": "21:45:00",
+      "urdu_text": "یہ عادت ہے یہ مینر ہے اگر نہیں بھی ہے تو آج کے بعد ہونا چاہیے کسی سے کچھ چیز لیں تو please کر کے لے اسے please give me a book please give me a pencil please give me a razor جو بھی بھی آپ لوگ میں please کر کے لیں یہ magic words ہیں کیا یہ magic words ہیں غصے والا پندہ بھی ہونا وہ بھی آپ لوگوں سے پیاس سے بات کرے گا please کر کے بولیں یہ لوگ",
+      "english_translation": "This is a habit. This is a manner. This is a custom. Even if you don't have it, you should have it from now on. If someone asks you for something, please say Please give me a book. Please give me a pencil. Please give me a razor. Whatever you have, please say it. These are magic words. These are magic words. Even an angry person will talk to you with love. Please give me a book.",
+      "urdu_word_count": 82,
+      "english_word_count": 77,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 53,
+      "start_time": "21:40:00",
+      "end_time": "22:10:00",
+      "urdu_text": "وہ بھی آپ لوگوں سے پیار سے بات کرے گا Please کر کے بولیں یہ لوگ Raise your hand Raise your hand We wait for your turn اپنا ہاتھ کڑھا کریں ایسے ہاتھ کڑھا کریں اور اپنی باری کا انتظار کریں اپنی باری کا انتظار کریں جب تیچر سے کوئی لفظ پوچھنا ہو کوئی بات پوچھنی ہو یا تیچر سے",
+      "english_translation": "Raise your hand and wait for your turn. Wait for your turn.",
+      "urdu_word_count": 60,
+      "english_word_count": 12,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 54,
+      "start_time": "22:05:00",
+      "end_time": "22:35:00",
+      "urdu_text": "جب تیچر سے کوئی لفظ پوچھنا ہو کوئی بات پوچھنی ہو یا دھر میں بھی ہو تین چار بہن بھائی ہوتے ہو تو آپ لوگ جب بھی کوئی پوچھنا ہو تو آپ لوگوں نے اس طرح ہاتھ کڑھا کرنا ہے جب آپ کی باری آئے جب تیچر یہاں دھر سے امی ابو بولے جی بیٹا بولے تو اس ٹائم آپ لوگوں نے بولنا ہے چکے یہ ہے نہیں ہے نہیں تو آج کے بعد ہم نہیں چاہیں چکے اپنے ہاتھ ریز کریں ایسے ہیڈ ریز کریں",
+      "english_translation": "When you want to ask something to the teacher, or you want to ask something, or you are at home with 3-4 siblings, so whenever you want to ask something, you have to raise your hand like this. When it's your turn, when the teacher or parents say, yes son, say it, then you have to say it. Okay? Yes, sir. This is? Yes, sir. No? No, sir. No, so we won't go after today, okay? Yes, sir. Raise your hand like this. Raise your hand.",
+      "urdu_word_count": 86,
+      "english_word_count": 86,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 55,
+      "start_time": "22:30:00",
+      "end_time": "23:00:00",
+      "urdu_text": "اپنا کام وقت پہ مکمل کریں",
+      "english_translation": "Yes, sir. You should have good manners. Raise your hand like this. Raise your hand like this. Then when it's your turn, say it. Yes, sir. Complete your work on time. Complete your work on time. Complete your work on time. On time. Do you do it? Yes, sir. I do it. I do it. I do it. I do it. You do it? She does it. She does it. Yes, sir. You should do it after today. Okay? Yes, sir. ",
+      "urdu_word_count": 6,
+      "english_word_count": 81,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 56,
+      "start_time": "22:55:00",
+      "end_time": "23:25:00",
+      "urdu_text": "کرو آج کے بات کرنا جب میں میں میں میں نیم نیم نیم نیم نیم نیم نیم",
+      "english_translation": "Make a queue during break and half time. Make a queue during break and half time.",
+      "urdu_word_count": 17,
+      "english_word_count": 16,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 57,
+      "start_time": "23:20:00",
+      "end_time": "23:50:00",
+      "urdu_text": "کھانا ملتا ہے اور وہاں تک آپ لوگ لائن میں جانا ہے شوٹی ٹیک بار جب جائیں پھر بھی لائن میں جائیں آپ لوگوں نے کل کے لیے ایسے کرنا ہے کہ آپ لوگ کافیوں پر صاف ستھرا ڈپا بنا کے یہ سارے بنا کر لانے ہیں شوٹی ٹیک بار جب جائیں پھر بھی لائن میں جانا ہے کہ آپ لوگ کافیوں پر صاف ستھرا ڈپا بنا کر لانے ہیں",
+      "english_translation": "You make a line in your finger, right? Take a break and make a line from here. Right? You get food and you have to go to the line till there. Right? When you go out of the shooting, you have to go to the line. You have to do this for tomorrow. You have to make a clean box on the coffee and bring all of it. Right? You have to bring all of it. All, all, all. Yes, sir. Yes, sir. Yes, sir.",
+      "urdu_word_count": 70,
+      "english_word_count": 85,
+      "has_urdu_script": true
+    },
+    {
+      "chunk_id": 58,
+      "start_time": "23:45:00",
+      "end_time": "24:15:00",
+      "urdu_text": "",
+      "english_translation": "We do all the work. All of them. Yes, son. And the rule you like the most, you can draw a line under it. I like this rule the most. I like this rule the most. Okay, son? Yes, sir. Sir, I'll write it now. Sir, I'll write it now. I'll press it.",
+      "urdu_word_count": 0,
+      "english_word_count": 53,
+      "has_urdu_script": false
+    },
+    {
+      "chunk_id": 59,
+      "start_time": "24:10:00",
+      "end_time": "24:15:70",
+      "urdu_text": "سے پلانا ہونے کے لئے آپ کو اپنے cooked rice کل جاتا ہے",
+      "english_translation": "I don't know if that's better.",
+      "urdu_word_count": 13,
+      "english_word_count": 6,
+      "has_urdu_script": true
+    }
+  ],
+  "summary": {
+    "total_urdu_words": 1870,
+    "total_english_words": 1844,
+    "successful_chunks": 59
+  }
+}
