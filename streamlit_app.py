@@ -17,36 +17,44 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
+# Minimal Professional CSS - Using Streamlit Defaults
 st.markdown("""
 <style>
     .main-header {
-        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-        padding: 1rem;
+        background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+        padding: 1.5rem;
         border-radius: 10px;
         color: white;
         text-align: center;
         margin-bottom: 2rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
+    
     .metric-card {
-        background: #f0f2f6;
-        padding: 1rem;
-        border-radius: 10px;
-        border-left: 4px solid #667eea;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #e6e6e6;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 1rem;
     }
+    
     .transcription-box {
-        background: #f8f9fa;
-        padding: 1rem;
-        border-radius: 10px;
-        border: 1px solid #dee2e6;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #e6e6e6;
         margin: 1rem 0;
     }
+    
     .urdu-text {
         direction: rtl;
         text-align: right;
         font-size: 16px;
         line-height: 1.6;
+        font-family: 'Noto Sans Urdu', Arial, sans-serif;
     }
+    
     .english-text {
         font-size: 16px;
         line-height: 1.6;
@@ -61,18 +69,40 @@ def load_processed_data():
     if not data_folder.exists():
         return None, None, None
     
-    # Load metadata
+    # Load metadata with error handling
     metadata_file = data_folder / "metadata.json"
     metadata = {}
-    if metadata_file.exists():
-        with open(metadata_file, 'r', encoding='utf-8') as f:
-            metadata = json.load(f)
+    if metadata_file.exists() and metadata_file.stat().st_size > 0:
+        try:
+            with open(metadata_file, 'r', encoding='utf-8') as f:
+                metadata = json.load(f)
+        except (json.JSONDecodeError, ValueError) as e:
+            st.warning(f"⚠️ Metadata file is corrupted, using default values. Error: {e}")
+            metadata = {
+                "total_files": 0,
+                "total_duration": "0:00",
+                "avg_accuracy": 95,
+                "last_processed": "Unknown"
+            }
+    else:
+        # Create default metadata if file doesn't exist or is empty
+        metadata = {
+            "total_files": 0,
+            "total_duration": "0:00", 
+            "avg_accuracy": 95,
+            "last_processed": "No processing yet"
+        }
     
     # Get all audio files
     audio_folder = data_folder / "audio"
     audio_files = list(audio_folder.glob("*.mp3")) if audio_folder.exists() else []
     
+    # Update metadata with actual file count if different
+    if audio_files and metadata.get("total_files", 0) == 0:
+        metadata["total_files"] = len(audio_files)
+    
     return metadata, audio_files, data_folder
+
 
 def get_transcription_files(data_folder, audio_file_stem):
     """Get corresponding transcription files for an audio file"""
@@ -106,45 +136,44 @@ def create_audio_player(audio_file):
     """
     return audio_html
 
-def create_statistics_dashboard(metadata):
+def create_statistics_dashboard(metadata, audio_files):
     """Create statistics dashboard"""
-    if not metadata:
+    if not metadata and not audio_files:
         st.warning("No processed data found. Please run the processing pipeline first.")
         return
+    
+    # Calculate stats from actual files if metadata is incomplete
+    actual_file_count = len(audio_files) if audio_files else 0
+    total_files = max(metadata.get('total_files', 0), actual_file_count)
     
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
-        st.markdown("""
-        <div class="metric-card">
-            <h3>Total Files</h3>
-            <h2>{}</h2>
-        </div>
-        """.format(metadata.get('total_files', 0)), unsafe_allow_html=True)
+        st.metric("Total Files", total_files)
     
     with col2:
-        st.markdown("""
-        <div class="metric-card">
-            <h3>Total Duration</h3>
-            <h2>{}</h2>
-        </div>
-        """.format(metadata.get('total_duration', '0:00')), unsafe_allow_html=True)
+        duration = metadata.get('total_duration', '0:00')
+        if isinstance(duration, (int, float)):
+            # Convert seconds to readable format
+            mins = int(duration // 60)
+            secs = int(duration % 60)
+            duration = f"{mins}:{secs:02d}"
+        st.metric("Total Duration", duration)
     
     with col3:
-        st.markdown("""
-        <div class="metric-card">
-            <h3>Avg Accuracy</h3>
-            <h2>{}%</h2>
-        </div>
-        """.format(metadata.get('avg_accuracy', 95)), unsafe_allow_html=True)
+        st.metric("Avg Accuracy", f"{metadata.get('avg_accuracy', 95)}%")
     
     with col4:
-        st.markdown("""
-        <div class="metric-card">
-            <h3>Last Processed</h3>
-            <h2>{}</h2>
-        </div>
-        """.format(metadata.get('last_processed', 'N/A')), unsafe_allow_html=True)
+        last_processed = metadata.get('last_processed', 'No data')
+        if last_processed and last_processed != 'No data':
+            try:
+                # Try to format the datetime if it's ISO format
+                from datetime import datetime
+                dt = datetime.fromisoformat(last_processed.replace('Z', '+00:00'))
+                last_processed = dt.strftime('%Y-%m-%d')
+            except:
+                pass  # Keep original format if parsing fails
+        st.metric("Last Processed", last_processed)
 
 def main():
     # Header
@@ -165,16 +194,27 @@ def main():
     
     if page == "Dashboard":
         st.header("📊 Processing Dashboard")
-        create_statistics_dashboard(metadata)
+        create_statistics_dashboard(metadata, audio_files)
         
         if metadata:
             # Processing timeline
             st.subheader("Processing Timeline")
-            if 'processing_history' in metadata:
+            if 'processing_history' in metadata and len(metadata['processing_history']) > 0:
                 df = pd.DataFrame(metadata['processing_history'])
-                fig = px.line(df, x='date', y='files_processed', 
-                             title="Files Processed Over Time")
+                # Convert date strings to datetime for better plotting
+                df['date'] = pd.to_datetime(df['date'])
+                
+                # Create timeline chart with available columns
+                fig = px.line(df, x='date', y='chunks', 
+                             title="Audio Chunks Processed Over Time")
                 st.plotly_chart(fig, use_container_width=True)
+                
+                # Additional chart for duration
+                if len(df) > 1:
+                    fig2 = px.bar(df, x='filename', y='duration',
+                                 title="Processing Duration by File")
+                    fig2.update_xaxes(tickangle=-45)
+                    st.plotly_chart(fig2, use_container_width=True)
         
         # Instructions
         st.subheader("📋 How to Use")
@@ -228,18 +268,16 @@ def main():
                     urdu_tab, english_tab = st.tabs(["اردو متن", "English Text"])
                     
                     with urdu_tab:
-                        st.markdown(f"""
-                        <div class="transcription-box urdu-text">
-                            {urdu_text if urdu_text else "No Urdu transcription available"}
-                        </div>
-                        """, unsafe_allow_html=True)
+                        if urdu_text:
+                            st.text_area("اردو متن", urdu_text, height=200, disabled=True)
+                        else:
+                            st.info("No Urdu transcription available")
                     
                     with english_tab:
-                        st.markdown(f"""
-                        <div class="transcription-box english-text">
-                            {english_text if english_text else "No English translation available"}
-                        </div>
-                        """, unsafe_allow_html=True)
+                        if english_text:
+                            st.text_area("English Text", english_text, height=200, disabled=True)
+                        else:
+                            st.info("No English translation available")
     
     elif page == "Transcription Viewer":
         st.header("📝 Batch Transcription Viewer")
@@ -301,7 +339,7 @@ def main():
         with col1:
             fig1 = px.bar(df, x='filename', y=['urdu_words', 'english_words'],
                          title="Word Count Comparison", barmode='group')
-            fig1.update_xaxis(tickangle=45)
+            fig1.update_xaxes(tickangle=45)
             st.plotly_chart(fig1, use_container_width=True)
         
         with col2:

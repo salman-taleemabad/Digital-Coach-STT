@@ -1,0 +1,14 @@
+{
+  "total_files": 1,
+  "total_duration": 1651.217,
+  "processing_history": [
+    {
+      "date": "2025-05-22T13:22:07.720120",
+      "filename": "Obs 1-918.m4a",
+      "duration": 1651.217,
+      "chunks": 67
+    }
+  ],
+  "avg_accuracy": 95,
+  "last_processed": "2025-05-22T13:22:07.720113"
+}
