@@ -198,9 +198,19 @@ class UrduTranscriptionPipeline:
         metadata_file = self.base_folder / "metadata.json"
         
         # Load existing metadata
-        if metadata_file.exists():
-            with open(metadata_file, 'r', encoding='utf-8') as f:
-                metadata = json.load(f)
+        if metadata_file.exists() and metadata_file.stat().st_size > 0:
+            try:
+                with open(metadata_file, 'r', encoding='utf-8') as f:
+                    metadata = json.load(f)
+            except (json.JSONDecodeError, ValueError) as e:
+                logger.warning(f"Invalid metadata.json file, creating new one: {e}")
+                metadata = {
+                    "total_files": 0,
+                    "total_duration": 0,
+                    "processing_history": [],
+                    "avg_accuracy": 95,
+                    "last_processed": None
+                }
         else:
             metadata = {
                 "total_files": 0,
